@@ -7,25 +7,34 @@
 	</head>
 	<body class="is-preload">
 
+
+		<header id="header" style="width:20%">
+			<h1><strong>Support Vector Machine and Feature Engineering</strong></h1>
+			<a href="https://micahharlan.github.io/" class="button">Home</a>
+		  </div>
+		</header>
+	  <br>
 <br> 
 <br>
+
+
 <section>
 	<div id="rows"> 
 		<article class="center
 		">
 			<h1><strong> Logistic Regression: Predicting a Country</strong></h1>
 				<p> The task of my classifier was to predict the country a Tsunami occurred in. My classifier was terrible. The classifier has a cross validation score of 0.120. This classifier was doomed from the start,
-					 there are 98 countries to choose from. None of the features in my classifier are essentially good. The ones I used are, deaths, houses destroyed, and the height of each wave. Each variable performs equally as well when running them alone.
+					there are 98 countries to choose from. None of the features in my classifier are essentially good. The ones I used are, deaths, houses destroyed, and the height of each wave. Each variable performs equally as well when running them alone.
 					When evaluating it was too big to read. I calculated the f1 score which was .002. Which told me my classifier is not better than a random guess. The recall score was 0.10 and the precision was even worse at .003. Both recall and precision need to be improved.
 					I started off my PCA by throwing random features from my data set into it To compare improvement I also ran a 2 fold cross validation (any higher number for k takes 20+ minutes run). 
 					The score for my linear model with PCA was .1809 and the cross validation score was .178. Just adding these features in have increased the score. The next thing i did was removing some of these features I added to see which ones are useful, 
-					or don’t help at all. Below is how each feature effected the classifier when it was absent from the list of features. The whole feature list that was 
+					or don't help at all. Below is how each feature effected the classifier when it was absent from the list of features. The whole feature list that was 
 					added is, normalized total deaths, normalized total destroyed houses,
 					 normalized wave height, city names, normalized year, normalized validity of the tsunami.
 				</p>
 				<br> 
 				<list> 
-					<li> Removing normalized total deaths PCA score: 0.1814%.</li>
+					<li>Removing normalized total deaths PCA score: 0.1814%.</li>
 					<li>Removing normalized total destroyed houses PCA score: 0.1809%.</li>
 					<li>Removing normalized wave height PCA score: 0.1785%.</li>
 					<li>Removing city names PCA score: 0.1751%.</li>
@@ -82,7 +91,12 @@
 					From both my SVM and logistic regression I learned that PCA is a very useful tool to improve scores.</p>
 		</article>
 
-		<article class="center"><h1>The code Embeded with the Data File Will be here soon</h1></article>
+		<article class="center"><h1>The code Embeded with the Data File Will be here soon</h1>
+			
+			<script src="https://gist.github.com/MicahHarlan/9698931ba52a96a754fc169d926b1459.js"></script>
+			
+		
+	</article>
 	</div>
 </section>
 
