@@ -1,17 +1,36 @@
 
 body {
-  background-image: url('../images/background.png');
-  background-size: cover;
-}
+  /* This is a single-line commentbackground-image: url('../images/background.png'); */
+  /*background-size: cover; */
+  background-color: #4f6d7a;
+  
 
+}
+.Navbackground {
+    background-color:#4f6d7a;
+    
+    
+}
 
 
 .background {
-    background-color: #ffffff; 
-    opacity: 0.5;
+    background-color:#eaeaea;
+    
+    
 }
 
 a,h1,p{
+    font-family: Rockwell;
     color:rgb(0, 0, 0)
 }
 
+.avatar{
+    width:20%;
+    border: solid 2px #dd6e42;
+    border-radius: 50%;
+
+}
+
+a:hover{
+    color:#dd6e42;
+}
